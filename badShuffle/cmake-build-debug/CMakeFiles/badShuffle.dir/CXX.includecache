@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/caowanying/CLionProjects/badShuffle/badShuffle.cpp
+iostream
+-
+random
+-
+cmath
+-
+cstdint
+-
+cstdlib
+-
+
