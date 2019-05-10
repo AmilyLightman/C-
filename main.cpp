@@ -209,7 +209,7 @@ public:
 
 int main() {
     char word[256];
-    ifstream in("/Users/caowanying/CLionProjects/practice12/dict.txt");
+    ifstream in("dict.txt");
     trie orig;
     if (!in) {
         cout << "file open error" << '\n';
@@ -231,7 +231,7 @@ int main() {
 
     //orig.print(orig.getRoot(), word, 0);
     int shortest = orig.findShort();
-    cout << shortest << '\n';
+    //cout << shortest << '\n';
 
     //  string s[10000];
     // orig.save(s, 0, orig.getRoot(), word, 0);
@@ -245,7 +245,7 @@ int main() {
     string str;
     tail.buildTail(orig.getRoot(), tail.getRoot(), shortest, 0, t,  str);
     ofstream out;
-    out.open("/Users/caowanying/CLionProjects/practice12/dict.out");
+    out.open("dict.out");
     tail.print2(out,tail.getRoot(), word, 0);
     out.close();
 
